@@ -82,6 +82,13 @@
     </div>
 
     <script>
+        var table = `<table>
+                <tr>
+                    <td>Product Id</td>
+                    <td>Product Name</td>
+                    <td>Product Price</td>
+                </tr>`
+        var tfooter = "</table>"        
       function addproduct() {
         var id = document.getElementById("P_id").value;
         var name = document.getElementById("P_Name").value;
@@ -95,14 +102,6 @@
         };
         product.push(data);
         console.log(product)
-
-        var table = `<table>
-                <tr>
-                    <td>Product Id</td>
-                    <td>Product Name</td>
-                    <td>Product Price</td>
-                </tr>`
-        var tfooter = "</table>"        
 
         product.forEach(element => {
             table +=`  <tr>
